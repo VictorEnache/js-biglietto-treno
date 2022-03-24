@@ -15,16 +15,16 @@ L'autput del prezzo finale va scritto in forma umana(con massimo due decimali, p
 //chiedo all' utente quante chilometri deve percorere
 let km_da_percorere = Number(prompt("Quanti chilometri deve percorere?"));
 
-while (isNaN(km_da_percorere)){
-    alert("il valore inserito non è valido, si prega di inserire un valore numerico");
+while (isNaN(km_da_percorere) || km_da_percorere <= 0){
+    alert("il valore inserito non è valido, si prega di inserire un valore numerico corretto");
     km_da_percorere = Number(prompt("Quanti chilometri deve percorere?"));
 }
 
 //chiedo all' utente l'età del passeggero
 let eta_del_passeggero = Number(prompt("Quale è l'età del passeggero?"));
 
-while (isNaN(eta_del_passeggero)){
-    alert("il valore inserito non è valido, si prega di inserire un valore numerico");
+while (isNaN(eta_del_passeggero) || eta_del_passeggero <= 0){
+    alert("il valore inserito non è valido, si prega di inserire un valore numerico corretto");
     eta_del_passeggero = Number(prompt("Quale è l'età del passeggero?"));
 }
 
