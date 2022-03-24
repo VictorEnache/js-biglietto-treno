@@ -13,11 +13,11 @@ L'autput del prezzo finale va scritto in forma umana(con massimo due decimali, p
  */
 
 //chiedo all' utente quante chilometri deve percorere
-let km_da_percorere = Number(prompt("Quanti chilometri deve percorere?"));
+let km_da_percorere = Number(prompt("Quanti chilometri deve percorrere?"));
 
 while (isNaN(km_da_percorere) || km_da_percorere <= 0){
     alert("il valore inserito non è valido, si prega di inserire un valore numerico corretto");
-    km_da_percorere = Number(prompt("Quanti chilometri deve percorere?"));
+    km_da_percorere = Number(prompt("Quanti chilometri deve percorrere?"));
 }
 
 //chiedo all' utente l'età del passeggero
@@ -55,7 +55,7 @@ let prezzo_finale_biglietto = prezzo_biglietto.toFixed(2) + "€";
 //Stampo il prezzo finale del biglietto al interno di un h1
 document.getElementById("costo_biglietto").innerHTML = prezzo_finale_biglietto;
 
-
+// stampo sulla console il risultato reale e quello arrotondato
 console.log(prezzo_biglietto)
 console.log(prezzo_finale_biglietto)
 
