@@ -42,6 +42,7 @@ const discount_over_65 = 40/100;
 //dichiaro una variabile al interno della quale posso contenere ilò prezzo del biglietto
 let prezzo_biglietto = km_da_percorere * prezzo_al_km;
 
+//indico quando vanno applicati gli sconti
 if (eta_del_passeggero < 18){
     prezzo_biglietto = km_da_percorere * prezzo_al_km - km_da_percorere * prezzo_al_km * discount_under_18;
 }
@@ -49,8 +50,8 @@ else if (eta_del_passeggero > 65) {
     prezzo_biglietto = km_da_percorere * prezzo_al_km - km_da_percorere * prezzo_al_km * discount_over_65;
 }
 
-
- let prezzo_finale_biglietto = prezzo_biglietto.toFixed(2) + "€";
+//arrotondo i numeri dopo la virgola fino ad un massimo di 2 cifre
+let prezzo_finale_biglietto = prezzo_biglietto.toFixed(2) + "€";
 
 
 
