@@ -37,9 +37,6 @@ const discount_under_18 = 20/100;
 //dichiaro una variabile alla quale assegno lo sconto in percentuale per gli over 65
 const discount_over_65 = 40/100;
 
-//dichiaro una variabile al interno della quale calcolo il prezzo del viaggio
-
-
 
 //dichiaro una variabile al interno della quale posso contenere ilò prezzo del biglietto
 let prezzo_biglietto = km_da_percorere * prezzo_al_km;
