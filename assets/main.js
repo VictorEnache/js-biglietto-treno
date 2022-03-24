@@ -23,7 +23,7 @@ while (isNaN(km_da_percorere) || km_da_percorere <= 0){
 //chiedo all' utente l'età del passeggero
 let eta_del_passeggero = Number(prompt("Quale è l'età del passeggero?"));
 
-while (isNaN(eta_del_passeggero) || eta_del_passeggero <= 0){
+while (isNaN(eta_del_passeggero) || eta_del_passeggero <= 0 || eta_del_passeggero >200){ //i valori minori di 0 e maggiori di 200 non sono validi
     alert("il valore inserito non è valido, si prega di inserire un valore numerico corretto");
     eta_del_passeggero = Number(prompt("Quale è l'età del passeggero?"));
 }
