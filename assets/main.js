@@ -21,11 +21,11 @@ while (isNaN(km_da_percorere)){
 }
 
 //chiedo all' utente l'età del passeggero
-const eta_del_passeggero = Number(prompt("Quale è l'età del passeggero?"));
+let eta_del_passeggero = Number(prompt("Quale è l'età del passeggero?"));
 
 while (isNaN(eta_del_passeggero)){
     alert("il valore inserito non è valido, si prega di inserire un valore numerico");
-    km_da_percorere = Number(prompt("Quanti chilometri deve percorere?"));
+    eta_del_passeggero = Number(prompt("Quale è l'età del passeggero?"));
 }
 
 //dichiaro una variabile alla quale assegno il prezzo di un km
